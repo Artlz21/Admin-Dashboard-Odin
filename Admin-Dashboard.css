@@ -1,7 +1,7 @@
 .container{
     display: inline-grid;
     position: fixed;
-    grid-template: 1fr 1fr/ 20% 60% 20%;
+    grid-template: 20% 80%/ 20% 60% 20%;
     background-color: lightcoral;
     left: 0;
     top: 0;
@@ -24,11 +24,11 @@
 }
 
 .logo img{
-    display: block;
+    border-radius: 15px;
     width:  2rem;
     height: 2rem;
-    padding-left: 1rem;
-    padding-top:  1rem;
+    margin-left: 1rem;
+    margin-top:  1rem;
 }
 
 .logo h3{
@@ -57,4 +57,112 @@
 .nav-bar-link p, .logo h3{
     color: white;
     text-shadow: 2px 2px 4px black;
+}
+
+.top-bar{
+    background-color: white;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+}
+
+.top-left{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 67%;
+}
+
+.top-bar .top-left img{
+    width: 1.5rem;
+    border-radius: 0.5rem;
+    margin-top: 18px;
+    margin-left: 31px;
+}
+
+.top-bar .top-left .searchbar{
+    display: flex;
+    gap: 1.2rem;
+}
+
+#searchbox{
+    margin-top: 1.2rem;
+    width: 35rem;
+    height: 1.35rem;
+    border-radius: 15px;
+    border-width: 0px;
+    background-color: rgb(215, 220, 230);
+}
+
+.top-bar .top-left .Profile{
+    display: flex;
+    height: 1fr;
+}
+
+.top-bar .top-left .Profile img{
+    width:  4.5rem;
+    height: 4.5rem;
+    border-radius: 2.25rem;
+    margin-top: 0.3rem;
+}
+
+.top-bar .top-left .Profile .Profile-text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.top-bar .top-left .Profile p, .top-bar .top-left .Profile h3{
+    margin: 0;
+}
+
+.top-bar .top-left .Profile p{
+    margin-top: 1.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.top-right{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 33%;
+}
+
+.top-right .right-Profile{
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.4rem;
+    margin-left: 2.5rem;
+}
+
+.top-right .right-Profile .bell{
+    width:  1.6rem;
+    height: 1.6rem;
+    margin-top: 0.7rem;
+}
+
+.top-right .right-Profile .image{
+    width:  2.8rem;
+    height: 2.8rem;
+    border-radius: 1.4rem;
+}
+
+.top-right .right-Profile h4{
+    margin-top: 1rem;
+}
+
+.top-right .right-buttons{
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.top-right .right-buttons button{
+    width:  5rem;
+    height: 1.8rem;
+    border-radius: 20px;
+    border-width: 0;
+    background-color: lightgreen;
 }
